@@ -21,6 +21,10 @@
                 transform: scale(1.05);
             }
         }
+
+        #quienes-somos h1 {
+            user-select: none;
+        }
     </style>
 </head>
 
@@ -62,7 +66,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 mx-auto" style="text-align: justify;">
                     <br>
-                    <h1 style="text-align: center; color:yellow;">¿Quiénes somos?</h1>
+                    <h1 style="text-align: center; color:yellow;" onclick="cambiarColorTitulo()">¿Quiénes somos?</h1>
                     <br>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -104,13 +108,21 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#quienes-somos h1').hover(function () {
-                $(this).toggleClass('animated');
-            });
-        });
+        function cambiarColorTitulo() {
+            var titulo = document.querySelector('#quienes-somos h1');
+            titulo.style.color = getRandomColor();
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
     </script>
 
 </body>
 
-</html> 
+</html>
