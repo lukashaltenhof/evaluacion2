@@ -12,11 +12,10 @@
 
 <body>
 
-    <nav class="navbar navbar-expand">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo_extremo_sur.png" width="30" height="30" class="d-inline-block align-top" alt="">
-
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,19 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a>
+                        <a class="nav-link" href="index.html">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nuestros-servicios">Nuestros servicios</a>
+                        <a class="nav-link" href="nuestros_servicios.html">Nuestros servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#consulta-clima">Consulta el Clima</a>
+                        <a class="nav-link" href="clima.html">Consulta el Clima</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactanos">Contáctanos</a>
+                        <a class="nav-link" href="contactanos.html">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -87,253 +86,11 @@
     </section>
 
 
-    <section id="nuestros-servicios">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 style="text-align: center; color: yellow;">Nuestros servicios</h2>
-                    <br>
-                    <div class="card-deck">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Caminata al Monte Tarn</h3>
-                                <p class="card-text"><strong>Precio por persona:</strong> $50.000</p>
-                                <p class="card-text">Disfruta de una caminata emocionante hasta la cima del Monte Tarn,
-                                    donde serás recompensado con vistas espectaculares de la región. Esta excursión
-                                    incluye guías expertos y transporte de ida y vuelta desde tu alojamiento.</p>
-                            </div>
-                            <img src="img/monte_tarn.png" class="card-img-top" alt="Monte Tarn" data-toggle="modal"
-                                data-target="#monteTarnModal">
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Caminata a Parrillar</h3>
-                                <p class="card-text"><strong>Precio por persona:</strong> $60.000</p>
-                                <p class="card-text">Embárcate en una aventura inolvidable a través de los senderos del
-                                    Parrillar, rodeado de una exuberante vegetación y paisajes impresionantes. Esta
-                                    caminata te lleva a lugares fuera de lo común y te permite conectarte plenamente con
-                                    la naturaleza.</p>
-                            </div>
-                            <img src="img/parrillar.png" class="card-img-top" alt="Parrillar" data-toggle="modal"
-                                data-target="#parrillarModal">
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Caminata a Mirador Zapador Austral</h3>
-                                <p class="card-text"><strong>Precio por persona:</strong> $70.000</p>
-                                <p class="card-text">Descubre el encanto del Mirador Zapador Austral mientras exploras
-                                    sus senderos panorámicos y observas la majestuosidad de la naturaleza circundante.
-                                    Esta caminata te ofrece una experiencia única llena de belleza y aventura.</p>
-                            </div>
-                            <img src="img/mirador_zapador_austral.png" class="card-img-top"
-                                alt="Mirador Zapador Austral" data-toggle="modal" data-target="#miradorZapadorModal">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="modal fade" id="monteTarnModal" tabindex="-1" role="dialog" aria-labelledby="monteTarnModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="monteTarnModalLabel">Monte Tarn</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/monte_tarn.png" class="img-fluid" alt="Monte Tarn">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="parrillarModal" tabindex="-1" role="dialog" aria-labelledby="parrillarModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="parrillarModalLabel">Parrillar</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/parrillar.png" class="img-fluid" alt="Parrillar">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="miradorZapadorModal" tabindex="-1" role="dialog"
-        aria-labelledby="miradorZapadorModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="miradorZapadorModalLabel">Mirador Zapador Austral</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/mirador_zapador_austral.png" class="img-fluid" alt="Mirador Zapador Austral">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="text-align: center;">
-        <div class="row">
-            <div class="col-md-12">
-                <section id="ubicacion">
-                    <h2>¿Dónde estamos?</h2>
-                    <br>
-                    <!-- Ejemplo de mapa de Google Maps -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.336432887496!2d-70.91488848432257!3d-53.15479947994852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a170a68c4e0ed%3A0x6ddc5ee8d540e107!2sPunta%20Arenas%2C%20Punta%20Arenas%2C%20Regi%C3%B3n%20de%20Magallanes%20y%20de%20la%20Ant%C3%A1rtica%20Chilena!5e0!3m2!1ses!2scl!4v1630433530031!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </section>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <section id="consulta-clima" class="text-center">
-                    <br>
-                    <h1 style="color:#ffc107;">Pronóstico en Punta Arenas</h1>
-                    <div id="Pronostico" class="weather-forecast" style="display: flex; justify-content: center;"></div>
-                </section>
-            </div>
-        </div>
-    </div>
-    
-    <section id="contactanos">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="text-align: center;">
-                    <h2>Contáctanos</h2>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="celular">Celular:</label>
-                            <input type="text" class="form-control" id="celular" name="celular" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="text" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="pais">País:</label>
-                            <input type="text" class="form-control" id="pais" name="pais">
-                        </div>
-                        <div class="form-group">
-                            <label for="ciudad">Ciudad:</label>
-                            <input type="text" class="form-control" id="ciudad" name="ciudad">
-                        </div>
-                        <div class="form-group">
-                            <label for="consulta">Consulta:</label>
-                            <textarea class="form-control" id="consulta" name="consulta" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-    <script>
 
-        $(document).ready(function () {
-            $('#contact-form').submit(function (e) {
-                e.preventDefault();
-
-                var nombre = $('#nombre').val();
-                var celular = $('#celular').val();
-                var email = $('#email').val();
-                var consulta = $('#consulta').val();
-
-                if (nombre === '' || celular === '' || email === '' || consulta === '') {
-                    alert('Por favor completa todos los campos obligatorios.');
-                    return;
-                }
-
-                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailPattern.test(email)) {
-                    alert('Por favor ingresa un email válido.');
-                    return;
-                }
-
-                // Aquí puedes agregar código para enviar el formulario
-
-                alert('¡Formulario enviado con éxito!');
-            });
-        });
-
-        // Captura los clics en los elementos de la barra de navegación
-        document.querySelectorAll('.navbar-nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-
-                const targetId = this.getAttribute('href'); // Obtiene el href del enlace
-                const targetSection = document.querySelector(targetId); // Obtiene la sección correspondiente
-
-                if (targetSection) {
-                    // Desplaza suavemente hacia la sección correspondiente
-                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
-    <script>
-        const settings = {
-            async: true,
-            crossDomain: true,
-            url: 'https://yahoo-weather5.p.rapidapi.com/weather?location=Punta%20Arenas&format=json&u=c',
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': 'c22823c660msh29ed1f938d22d7fp192823jsn3cf45f217edf',
-                'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
-            }
-        };
-
-        $.ajax(settings).done(function (response) {
-            console.log(response.forecasts);
-            $.each(response.forecasts, function (i, item) {
-                var iconUrl = getWeatherIconUrl(item.code); // Obtener la URL de la imagen del clima
-                var html = `
-            <div class="forecast-item">
-                <h3>${item.day}</h3>
-                <img src="${iconUrl}" alt="${item.text}" width="50">
-                <p><strong>Mínima:</strong> ${item.low}°C</p>
-                <p><strong>Máxima:</strong> ${item.high}°C</p>
-            </div>`;
-                $("#Pronostico").append(html);
-            })
-        });
-
-        // Función para obtener la URL de la imagen del clima según el código de clima
-        function getWeatherIconUrl(weatherCode) {
-            // Objeto que mapea los códigos de clima a las URL de las imágenes
-            var weatherIcons = {
-                "32": "img/soleado.png", // Soleado
-                "11": "img/lluvia.png", // Lluvia
-                "26": "img/nublado.png", // Nublado
-                "34": "img/parcialmente_nublado.png", // Parcialmente nublado
-                "28": "img/nublado.png", // Mayormente nublado
-                // Agrega más códigos de clima y las URL correspondientes aquí
-            };
-            // Si no hay una URL definida para el código de clima, usa una imagen por defecto
-            return weatherIcons[weatherCode] || "url_de_la_imagen_por_defecto.png";
-        }
-
-
-    </script>
 
 </body>
 
