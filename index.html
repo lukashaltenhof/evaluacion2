@@ -46,8 +46,10 @@
 
     <section id="quienes-somos">
         <div class="container-fluid" style="margin-top: 20px;">
-            <div class="row justify-content-center"> <!-- Añade la clase justify-content-center para centrar horizontalmente la fila -->
-                <div class="col-md-8 mx-auto" style="text-align: justify;"> <!-- Añade la clase mx-auto para centrar horizontalmente el contenido de la columna -->
+            <div class="row justify-content-center">
+                <!-- Añade la clase justify-content-center para centrar horizontalmente la fila -->
+                <div class="col-md-8 mx-auto" style="text-align: justify;">
+                    <!-- Añade la clase mx-auto para centrar horizontalmente el contenido de la columna -->
                     <br>
                     <h1 style="text-align: center; color:yellow;">¿Quiénes somos?</h1>
                     <br>
@@ -63,24 +65,27 @@
                                 <img src="img/quienes_somos3.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
                     <br>
-                    <p style="font-size: large; text-align: center;">Somos un grupo de entusiastas del turismo que amamos explorar la naturaleza salvaje de Punta
+                    <p style="font-size: large; text-align: center;">Somos un grupo de entusiastas del turismo que
+                        amamos explorar la naturaleza salvaje de Punta
                         Arenas a caballo y a pie. Nuestra pasión por el aire libre nos lleva a ofrecer experiencias
                         únicas a nuestros clientes.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <section id="nuestros-servicios">
         <div class="container-fluid">
@@ -179,31 +184,32 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="text-align: center;">
         <div class="row">
-            <div class="col-md-6">
-                <section id="ubicacion" class="text-center">
+            <div class="col-md-12">
+                <section id="ubicacion">
                     <h2>¿Dónde estamos?</h2>
                     <br>
-
                     <!-- Ejemplo de mapa de Google Maps -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.336432887496!2d-70.91488848432257!3d-53.15479947994852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a170a68c4e0ed%3A0x6ddc5ee8d540e107!2sPunta%20Arenas%2C%20Punta%20Arenas%2C%20Regi%C3%B3n%20de%20Magallanes%20y%20de%20la%20Ant%C3%A1rtica%20Chilena!5e0!3m2!1ses!2scl!4v1630433530031!5m2!1ses!2scl"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.336432887496!2d-70.91488848432257!3d-53.15479947994852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a170a68c4e0ed%3A0x6ddc5ee8d540e107!2sPunta%20Arenas%2C%20Punta%20Arenas%2C%20Regi%C3%B3n%20de%20Magallanes%20y%20de%20la%20Ant%C3%A1rtica%20Chilena!5e0!3m2!1ses!2scl!4v1630433530031!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </section>
             </div>
-            <div class="col-md-6">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <section id="consulta-clima" class="text-center">
-                    <h2>Consulta el Clima</h2>
-                    <div id="weather"></div>
+                    <br>
+                    <h1 style="color:#ffc107;">Pronóstico en Punta Arenas</h1>
+                    <div id="Pronostico" class="weather-forecast" style="display: flex; justify-content: center;"></div>
                 </section>
             </div>
         </div>
     </div>
+    
     <section id="contactanos">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="text-align: center;">
                     <h2>Contáctanos</h2>
                     <form id="contact-form">
                         <div class="form-group">
@@ -242,24 +248,7 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
     <script>
-        var apiKey = 'YOUR_API_KEY'; // Aquí debes colocar tu propia API key de OpenWeatherMap
-        var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Punta%20Arenas&lang=es&appid=' + apiKey;
-        var locations = ['Monte Tarn', 'Parrillar', 'Mirador Zapador Austral'];
-        $(document).ready(function () {
-            locations.forEach(function (location) {
-                var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + location + '&lang=es&appid=' + apiKey;
 
-                $.getJSON(apiUrl, function (data) {
-                    var weatherInfo = '<h3>Clima en ' + location + '</h3>';
-                    weatherInfo += '<p>Descripción: ' + data.weather[0].description + '</p>';
-                    weatherInfo += '<p>Temperatura: ' + (data.main.temp - 273.15).toFixed(1) + '°C</p>';
-                    weatherInfo += '<p>Humedad: ' + data.main.humidity + '%</p>';
-                    $('#weather').append(weatherInfo);
-                }).fail(function () {
-                    $('#weather').append('<p>No se pudo obtener la información del clima para ' + location + '</p>');
-                });
-            });
-        });
         $(document).ready(function () {
             $('#contact-form').submit(function (e) {
                 e.preventDefault();
@@ -300,6 +289,50 @@
                 }
             });
         });
+    </script>
+    <script>
+        const settings = {
+            async: true,
+            crossDomain: true,
+            url: 'https://yahoo-weather5.p.rapidapi.com/weather?location=Punta%20Arenas&format=json&u=c',
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'c22823c660msh29ed1f938d22d7fp192823jsn3cf45f217edf',
+                'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
+            }
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response.forecasts);
+            $.each(response.forecasts, function (i, item) {
+                var iconUrl = getWeatherIconUrl(item.code); // Obtener la URL de la imagen del clima
+                var html = `
+            <div class="forecast-item">
+                <h3>${item.day}</h3>
+                <img src="${iconUrl}" alt="${item.text}" width="50">
+                <p><strong>Mínima:</strong> ${item.low}°C</p>
+                <p><strong>Máxima:</strong> ${item.high}°C</p>
+            </div>`;
+                $("#Pronostico").append(html);
+            })
+        });
+
+        // Función para obtener la URL de la imagen del clima según el código de clima
+        function getWeatherIconUrl(weatherCode) {
+            // Objeto que mapea los códigos de clima a las URL de las imágenes
+            var weatherIcons = {
+                "32": "img/soleado.png", // Soleado
+                "11": "img/lluvia.png", // Lluvia
+                "26": "img/nublado.png", // Nublado
+                "34": "img/parcialmente_nublado.png", // Parcialmente nublado
+                "28": "img/nublado.png", // Mayormente nublado
+                // Agrega más códigos de clima y las URL correspondientes aquí
+            };
+            // Si no hay una URL definida para el código de clima, usa una imagen por defecto
+            return weatherIcons[weatherCode] || "url_de_la_imagen_por_defecto.png";
+        }
+
+
     </script>
 
 </body>

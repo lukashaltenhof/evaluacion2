@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    ><div id="Pronostico">
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const settings = {
+            async: true,
+            crossDomain: true,
+            url: 'https://yahoo-weather5.p.rapidapi.com/weather?location=Punta%20Arenas&format=json&u=c',
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'c22823c660msh29ed1f938d22d7fp192823jsn3cf45f217edf',
+                'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
+            }
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response.forecasts);
+            $.each(response.forecasts, function(i, item){
+                $("#Pronostico").append("<h2>"+item.day+"Minima: " + item.low+"Maxima: " + item.high+"</h2>")
+            })
+        });
+
+    </script>
+</body>
+
+</html>

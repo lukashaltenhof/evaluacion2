@@ -190,3 +190,48 @@ iframe {
 .card-text {
     color: #fff; /* Letras blancas */
 }
+
+/* Estilos para la sección de pronóstico */
+#Pronostico {
+    margin: 5%;
+    padding: 20px;
+    max-width: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad del 50% */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+#Pronostico h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.weather-container {
+    margin-top: 20px;
+}
+
+.weather-forecast {
+    display: flex; /* Utilizar flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en una sola línea */
+    justify-content: space-around; /* Distribuir los elementos de manera uniforme a lo largo de la línea */
+}
+
+.weather-forecast h2 {
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.weather-forecast h3 {
+    margin-top: 0;
+}
+
+.weather-forecast p {
+    margin-bottom: 5px;
+}
+
+.weather-forecast .forecast-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
