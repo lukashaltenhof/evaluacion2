@@ -235,3 +235,21 @@ iframe {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 }
+
+
+#quienes-somos h1:hover {
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#quienes-somos h1 {
+    user-select: none;
+}
