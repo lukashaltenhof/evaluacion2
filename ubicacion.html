@@ -6,6 +6,7 @@
     <title>¿Dónde estamos?</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +17,8 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="bi bi-list"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -27,7 +29,7 @@
                         <a class="nav-link" href="nuestros_servicios.html">Nuestros servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                        <a class="nav-link active" href="ubicacion.html">Ubicación</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="clima.html">Consulta el Clima</a>
@@ -46,7 +48,7 @@
                 <div class="col-md-12">
                     <section id="ubicacion">
                         <br>
-                        <h2 style="font-size: 80px; margin-left: 5%; color: rgb(184, 167, 17);">¿Dónde estamos?</h2>
+                        <h1 style="text-align: center; color:yellow;" onclick="cambiarColorTitulo()">Ubicación</h1>
                         <br>                    
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.336432887496!2d-70.91488848432257!3d-53.15479947994852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a170a68c4e0ed%3A0x6ddc5ee8d540e107!2sPunta%20Arenas%2C%20Punta%20Arenas%2C%20Regi%C3%B3n%20de%20Magallanes%20y%20de%20la%20Ant%C3%A1rtica%20Chilena!5e0!3m2!1ses!2scl!4v1630433530031!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <p style="margin-top: 5%; font-size: 30px;">
@@ -62,7 +64,8 @@
                 
             </div>            
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 </body>
