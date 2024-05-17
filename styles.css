@@ -253,3 +253,20 @@ iframe {
 #quienes-somos h1 {
     user-select: none;
 }
+
+#quienes-somos h1:hover {
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#quienes-somos h1 {
+    user-select: none;
+}
